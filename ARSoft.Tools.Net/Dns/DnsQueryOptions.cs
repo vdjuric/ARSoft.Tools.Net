@@ -103,7 +103,7 @@ namespace ARSoft.Tools.Net.Dns
 			}
 		}
 
-		internal static DnsQueryOptions DefaultQueryOptions { get; } = new()
+		public static DnsQueryOptions DefaultQueryOptions { get; } = new()
 		{
 			IsRecursionDesired = true,
 			EDnsOptions = new(

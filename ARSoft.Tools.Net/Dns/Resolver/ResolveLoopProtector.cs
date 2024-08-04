@@ -18,7 +18,7 @@
 
 namespace ARSoft.Tools.Net.Dns;
 
-internal class ResolveLoopProtector
+public class ResolveLoopProtector
 {
 	private readonly HashSet<DnsQuestion> _chain = new();
 

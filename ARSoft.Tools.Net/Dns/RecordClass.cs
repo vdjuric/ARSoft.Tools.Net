@@ -77,7 +77,7 @@ namespace ARSoft.Tools.Net.Dns
 		Any = 255
 	}
 
-	internal static class RecordClassHelper
+	public static class RecordClassHelper
 	{
 		public static string ToShortString(this RecordClass recordClass)
 		{

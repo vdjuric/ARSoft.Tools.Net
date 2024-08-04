@@ -35,7 +35,7 @@ public abstract class DnsRecordBase : DnsMessageEntryBase, IComparable<DnsRecord
 	/// <summary>
 	///   Seconds which a record should be cached at most
 	/// </summary>
-	public int TimeToLive { get; internal set; }
+	public int TimeToLive { get; set; }
 
 	protected DnsRecordBase(DomainName name, RecordType recordType, RecordClass recordClass, int timeToLive)
 		: base(name, recordType, recordClass)
@@ -489,7 +489,7 @@ public abstract class DnsRecordBase : DnsMessageEntryBase, IComparable<DnsRecord
 		}
 	}
 
-	internal T Clone<T>()
+	public T Clone<T>()
 		where T : DnsRecordBase
 	{
 		return (T) MemberwiseClone();

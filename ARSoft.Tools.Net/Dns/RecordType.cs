@@ -846,7 +846,7 @@ namespace ARSoft.Tools.Net.Dns
 		[Obsolete] Dlv = 32769,
 	}
 
-	internal static class RecordTypeHelper
+	public static class RecordTypeHelper
 	{
 		public static string ToShortString(this RecordType recordType)
 		{
